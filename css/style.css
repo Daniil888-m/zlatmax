@@ -2209,31 +2209,31 @@ body::after {
 }
 
 .sub-menu-catalog__block_1 {
-  -ms-grid-columns: (minmax(auto, 20%))[1];
+  -ms-grid-columns: (minmax(auto, 20%));
   grid-template-columns: repeat(1, minmax(auto, 20%));
   justify-items: start;
 }
 
 .sub-menu-catalog__block_2 {
-  -ms-grid-columns: (minmax(auto, 20%))[2];
+  -ms-grid-columns: (minmax(auto, 20%));
   grid-template-columns: repeat(2, minmax(auto, 20%));
   justify-items: start;
 }
 
 .sub-menu-catalog__block_3 {
-  -ms-grid-columns: (minmax(auto, 20%))[3];
+  -ms-grid-columns: (minmax(auto, 20%));
   grid-template-columns: repeat(3, minmax(auto, 20%));
   justify-items: start;
 }
 
 .sub-menu-catalog__block_4 {
-  -ms-grid-columns: (minmax(auto, 20%))[4];
+  -ms-grid-columns: (minmax(auto, 20%));
   grid-template-columns: repeat(4, minmax(auto, 20%));
   justify-items: start;
 }
 
 .sub-menu-catalog__block_5 {
-  -ms-grid-columns: (minmax(auto, 20%))[5];
+  -ms-grid-columns: (minmax(auto, 20%));
   grid-template-columns: repeat(5, minmax(auto, 20%));
   justify-items: start;
 }
