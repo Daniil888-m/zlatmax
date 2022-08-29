@@ -2410,9 +2410,7 @@
 					showMoreContent = Array.from(showMoreContent).filter((item => item.closest("[data-showmore]") === showMoreBlock))[0];
 					showMoreButton = Array.from(showMoreButton).filter((item => item.closest("[data-showmore]") === showMoreBlock))[0];
 					const hiddenHeight = getHeight(showMoreBlock, showMoreContent);
-					console.log(showMoreButton);
-					console.log(showMoreContent);
-					console.log(showMoreBlock);
+
 					if (matchMedia.matches || !matchMedia) if (hiddenHeight < getOriginalHeight(showMoreContent)) {
 						_slideUp(showMoreContent, 0, hiddenHeight);
 						showMoreButton.hidden = false;
@@ -2433,8 +2431,7 @@
 						for (let index = 1; index < showMoreItems.length; index++) {
 							const showMoreItem = showMoreItems[index - 1];
 							hiddenHeight += showMoreItem.offsetHeight;
-							console.log(showMoreItem);
-							console.log(showMoreItem.offsetHeight);
+
 							if (index == showMoreTypeValue) break;
 						}
 					} else {
@@ -2480,7 +2477,7 @@
 		}
 		function FLS(message) {
 			setTimeout((() => {
-				if (window.FLS) console.log(message);
+
 			}), 0);
 		}
 		function uniqArray(array) {
@@ -9260,10 +9257,10 @@
 				parallax: true,
 				loop: true,
 				effect: "fade",
-				 autoplay: {
-				     delay: 3e3,
-				     disableOnInteraction: false
-				 },
+				autoplay: {
+					delay: 3e3,
+					disableOnInteraction: false
+				},
 				pagination: {
 					el: ".control-main-block__dots",
 					clickable: true
@@ -9335,8 +9332,8 @@
 						loop: true,
 						effect: "fade",
 						autoplay: {
-						    delay: 3e3,
-						    disableOnInteraction: false
+							delay: 3e3,
+							disableOnInteraction: false
 						},
 						pagination: {
 							el: ".new-products__dotts",
@@ -9966,7 +9963,7 @@ PERFORMANCE OF THIS SOFTWARE.
 				if (!src) if (isHTML5VIdeo) return {
 					html5: true
 				}; else {
-					console.error("lightGallery :- data-src is not provided on slide item " + (index + 1) + ". Please make sure the selector property is properly configured. More info - https://www.lightgalleryjs.com/demos/html-markup/");
+
 					return;
 				}
 				var youtube = src.match(/\/\/(?:www\.)?youtu(?:\.be|be\.com|be-nocookie\.com)\/(?:watch\?v=|embed\/)?([a-z0-9\-\_\%]+)([\&|?][\S]*)*/i);
@@ -10065,7 +10062,7 @@ PERFORMANCE OF THIS SOFTWARE.
 				}));
 			};
 			LightGallery.prototype.validateLicense = function () {
-				if (!this.settings.licenseKey) console.error("Please provide a valid license key"); else if ("0000-0000-000-0000" === this.settings.licenseKey) console.warn("lightGallery: " + this.settings.licenseKey + " license key is not valid for production use");
+				if (!this.settings.licenseKey); else if ("0000-0000-000-0000" === this.settings.licenseKey) console.warn("lightGallery: " + this.settings.licenseKey + " license key is not valid for production use");
 			};
 			LightGallery.prototype.getSlideItem = function (index) {
 				return $LG(this.getSlideItemId(index));
